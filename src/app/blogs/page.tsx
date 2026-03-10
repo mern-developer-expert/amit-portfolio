@@ -9,7 +9,10 @@ export const metadata: Metadata = {
     description: "Deep-dives into MERN stack development, high-performance web engineering, and digital innovation. Explore technical insights and master your craft with Amit Kumar.",
     keywords: [
         "Amit Kumar",
+        "MERN Developer Expert",
+        "MERN Developer Amit",
         "MERN master",
+        "mern expert amit",
         "The Journal",
         "Technical Blog",
         "Web Engineering",

@@ -34,11 +34,11 @@ export async function generateMetadata(
   if (!post) return { title: "Post Not Found" };
   const ogImage = post.mainImage
     ? urlFor(post.mainImage)
-        .width(1200)
-        .height(630)
-        .fit("crop")
-        .format("jpg")
-        .url()
+      .width(1200)
+      .height(630)
+      .fit("crop")
+      .format("jpg")
+      .url()
     : "https://www.amitdevjourney.xyz/og-image.jpg";
 
   const categories = Array.isArray(post.categories)
@@ -54,6 +54,8 @@ export async function generateMetadata(
     keywords: [
       ...dynamicKeywords,
       ...categories,
+      "MERN Developer Expert",
+      "MERN Developer Amit",
       "MERN stack",
       "Amit Kumar",
       "Developer",
@@ -120,11 +122,11 @@ export default async function BlogPostPage({
   const currentUrl = `https://www.amitdevjourney.xyz/blogs/${slug}`;
   const ogImage = post.mainImage
     ? urlFor(post.mainImage)
-        .width(1200)
-        .height(630)
-        .fit("crop")
-        .format("jpg")
-        .url()
+      .width(1200)
+      .height(630)
+      .fit("crop")
+      .format("jpg")
+      .url()
     : "https://www.amitdevjourney.xyz/og-image.jpg";
 
   return (

@@ -18,13 +18,13 @@ const sora = Sora({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.amitdevjourney.xyz/"),
   title: {
-    default: "Amit Kumar | Expert MERN Stack Developer & Learn in Public",
+    default: "Amit Kumar | MERN Developer Expert & Full-Stack Engineer",
     template: "%s | Amit Kumar Portfolio",
   },
   description:
     "Amit Kumar — Expert MERN Stack Developer. Building scalable 1M+ user SaaS platforms. Learning in Public: sharing insights on React, Node.js, and scalable architecture.",
   keywords:
-    "Amit Kumar, MERN, full stack developer, MERN Developer, MERN Stack Developer, MERN developer expert, React, Next.js, Node.js, Express, MongoDB, TypeScript, JavaScript, SaaS, healthcare SaaS, EdTech, real-time, 1M+ users, portfolio, freelance, India",
+    "Amit Kumar, MERN Developer Amit, MERN Developer Expert, MERN Stack Developer, MERN expert amit, mer developer, React, Next.js, Node.js, Express, MongoDB, TypeScript, JavaScript, SaaS, portfolio, India",
   authors: [{ name: "Amit Kumar" }],
   robots: {
     index: true,

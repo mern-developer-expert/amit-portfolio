@@ -8,9 +8,11 @@ export const metadata: Metadata = {
     "Learn about Amit Kumar, a product-focused MERN stack developer with 4+ years of experience building scalable web applications for companies like Bright Digi Gold and TestOfire.",
   keywords: [
     "Amit Kumar",
+    "MERN Developer Expert",
     "MERN stack developer",
-    "MERN developer expert",
-    "Full-stack developer",
+    "MERN Developer Amit",
+    "Full stack developer",
+    "mern expert amit",
     "React developer",
     "Node.js developer",
     "Next.js",

@@ -89,7 +89,7 @@ export default function Hero() {
                   <div className="relative z-10 flex items-center justify-center p-6 bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
                     <Image
                       src="/hero-illustration.svg"
-                      alt="Developer illustration"
+                      alt="Amit Kumar - MERN Developer Expert and Product Engineer"
                       width={900}
                       height={600}
                       className="w-full h-auto"

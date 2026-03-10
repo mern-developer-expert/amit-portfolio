@@ -7,8 +7,9 @@ export const metadata: Metadata = {
   description:
     "Amit Kumar offers expert MERN full-stack development, digital marketing, and cloud DevOps services. From React/Next.js frontends to scalable Node.js backends and strategic SEO, I deliver end-to-end solutions for projects of any scale.",
   keywords: [
+    "MERN Developer Expert",
     "MERN stack",
-    "Full-stack developer",
+    "Full stack developer",
     "React developer",
     "Next.js developer",
     "Node.js",

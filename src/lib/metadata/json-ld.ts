@@ -27,6 +27,7 @@ export const PERSON_SCHEMA = {
     name: "Bright DiGi Gold",
   },
   knowsAbout: [
+    "MERN Developer Amit",
     "MERN Developer Expert",
     "React",
     "Next.js",
@@ -48,7 +49,7 @@ export function generateWebsiteSchema() {
     "@type": "WebSite",
     "@id": WEBSITE_ID,
     url: BASE_URL,
-    name: "Amit Dev Journey | MERN Stack Portfolio",
+    name: "Amit Dev Journey | MERN Developer Expert & Product Engineer | Best Portfolio",
     publisher: { "@id": PERSON_ID },
   };
 }
@@ -128,7 +129,7 @@ export function generateServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "Full-Stack Web Development",
+    serviceType: "Full Stack Web and app Development",
     provider: { "@id": PERSON_ID },
     areaServed: "Worldwide",
     hasOfferCatalog: {
@@ -202,5 +203,22 @@ export function generateFaqSchema(
         text: faq.answer,
       },
     })),
+  };
+}
+
+export function generateProfessionalServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${BASE_URL}/#service`,
+    name: "Amit Kumar - MERN Developer Expert",
+    url: BASE_URL,
+    image: `${BASE_URL}/og-image.jpg`,
+    description: "Expert MERN stack development services by Amit Kumar. Building scalable SaaS and real-time platforms.",
+    address: {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    priceRange: "$$$"
   };
 }
