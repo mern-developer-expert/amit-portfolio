@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                 { label: "About", href: "/about" },
                 { label: "Services", href: "/services" },
                 { label: "Contact", href: "/contact" },
-                { label: "Blog", href: "/blog" },
+                { label: "Blog", href: "/blogs" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link
