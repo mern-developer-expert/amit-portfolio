@@ -2,9 +2,7 @@
 
 import React, { Suspense } from "react";
 import { LazyMotion, domAnimation } from "framer-motion";
-import Skills from "@/components/home/Skills";
-
-
+const Skills = React.lazy(() => import("@/components/home/Skills"));
 const Projects = React.lazy(() => import("@/components/home/projects"));
 const ImpactDelivered = React.lazy(() => import("@/components/home/ImpactDelivered"));
 const Services = React.lazy(() => import("@/components/home/services"));
@@ -21,7 +19,9 @@ export default function HomeContent() {
                         <h2 id="skills-heading" className="sr-only">
                             Skills and Technologies
                         </h2>
-                        <Skills />
+                        <Suspense fallback={<div className="w-full h-[400px] flex items-center justify-center"><div className="w-8 h-8 border-4 border-cyan-500 rounded-full border-t-transparent animate-spin"></div></div>}>
+                            <Skills />
+                        </Suspense>
                     </section>
 
                     <section

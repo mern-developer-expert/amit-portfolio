@@ -146,7 +146,7 @@ h6 {
   animation: fade-in 0.8s ease-out forwards;
 }
 
-.neon-text {
+/* .neon-text {
   color: #fff;
   text-shadow:
     0 0 5px #ff005e,
@@ -174,6 +174,18 @@ h6 {
       0 0 80px #00d4ff,
       0 0 160px #00d4ff;
   }
+} */
+
+.neon-text {
+    color: #fff;
+    filter: drop-shadow(0 0 5px #ff005e) drop-shadow(0 0 12px #ff005e);
+    animation: glowPulse 2s ease-in-out infinite alternate;
+    will-change: opacity;
+}
+
+@keyframes glowPulse {
+    from { opacity: 0.75; filter: drop-shadow(0 0 4px #ff005e) drop-shadow(0 0 8px #ff005e); }
+    to   { opacity: 1;    filter: drop-shadow(0 0 8px #00d4ff) drop-shadow(0 0 20px #00d4ff); }
 }
 
 /* global class */

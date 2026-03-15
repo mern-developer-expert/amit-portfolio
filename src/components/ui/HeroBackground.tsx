@@ -75,7 +75,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
           value: { min: 0.2, max: 0.7 },
           animation: {
             enable: false,
-            speed: 0.5,
+            speed: 0.7,
             sync: false,
             // startValue: "max",
             // startValue: "min",
@@ -151,7 +151,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
           value: { min: 0.2, max: 0.9 },
           animation: {
             enable: false,
-            speed: 2,
+            speed: 3,
             sync: false,
             // startValue: "max",
             // startValue: "min",
@@ -164,7 +164,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
         },
         move: {
           enable: true,
-          speed: { min: 0.5 , max: 1 },
+          speed: { min: 1, max: 2 },
           direction: "top" as any,
           random: false,
           straight: true,
