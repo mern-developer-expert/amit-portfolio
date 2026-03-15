@@ -77,7 +77,7 @@ export default function Hero() {
 
               {/* Right column – hero image */}
               <div className="lg:col-span-5 flex justify-center lg:justify-end px-4 sm:px-6 md:px-0">
-                <div className="relative w-[300px] sm:w-[360px] md:w-[420px] lg:w-[520px] rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 backdrop-blur-md">
+                <div className="relative w-[300px] sm:w-[360px] md:w-[420px] lg:w-[520px] rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 sm:backdrop-blur-md">
                   <div className="relative z-10 flex items-center justify-center p-6 bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
                     <Image
                       src="/hero-illustration.svg"
