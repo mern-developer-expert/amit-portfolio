@@ -21,12 +21,12 @@ export default function Hero() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-6 sm:py-10 md:py-12">
               {/* Left column */}
               <div className="lg:col-span-7 px-4 sm:px-6 md:px-0">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#8ef3c1] via-[#3ed6ac] to-[#06b6d4] drop-shadow-2xl">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#8ef3c1] via-[#3ed6ac] to-[#06b6d4] drop-shadow-md sm:drop-shadow-2xl">
                   Amit Kumar
-                  <span className="block text-2xl md:text-4xl font-semibold text-white/80 mt-2 tracking-normal">
-                    MERN Developer Expert & Product Engineer
-                  </span>
                 </h1>
+                <h2 className="text-2xl md:text-4xl font-semibold text-white/80 mt-2 tracking-normal">
+                  MERN Developer Expert & Product Engineer
+                </h2>
 
                 <p className="mt-6 leading-snug text-base sm:text-lg md:text-xl text-slate-200 max-w-3xl">
                   I design and ship resilient, production-grade web

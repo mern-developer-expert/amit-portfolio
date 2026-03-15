@@ -66,7 +66,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
       fpsLimit: 60,
       particles: {
         number: {
-          value: isMobile ? 150 : 250,
+          value: isMobile ? 180 : 250,
           density: { enable: true, area: 500 },
         },
         color: { value: ["#dde2e6", "#fff", "#dde2e6"] },
