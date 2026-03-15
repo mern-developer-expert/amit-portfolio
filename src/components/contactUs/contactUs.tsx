@@ -134,8 +134,6 @@ export default function ContactUs() {
   return (
     <LazyMotion features={domAnimation}>
       <div className="min-h-screen relative overflow-hidden">
-        {/* Decorative gradient layers */}
-
 
         <div className="pt-32 pb-10 sm:pb-16 px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">

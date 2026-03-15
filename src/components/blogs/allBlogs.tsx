@@ -35,12 +35,7 @@ export default function AllBlogsContent({
 
     return (
         <LazyMotion features={domAnimation}>
-            <div className="min-h-screen relative overflow-hidden">
-                {/* Decorative gradient layers */}
-
-                {/* Dynamic Background Accents */}
-                <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#06b6d4]/10 rounded-full blur-[120px] pointer-events-none" />
-                <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#3ed6ac]/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="min-h-screen pt-32 pb-10 sm:pb-16 relative overflow-hidden">
 
                 <div className="max-w-7xl mx-auto relative z-10">
                     {/* Hero Section */}

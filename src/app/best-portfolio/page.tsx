@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function BestPortfolioPage() {
   return (
-    <div className="min-h-screen relative overflow-hidden pt-28 pb-10 sm:pb-16">
+    <div className="min-h-screen relative overflow-hidden pt-32 pb-10 sm:pb-16">
       <div className="max-w-6xl mx-auto relative z-10">
         <header className="text-center mb-12">
           <div>
