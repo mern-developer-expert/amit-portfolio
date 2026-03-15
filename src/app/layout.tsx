@@ -7,6 +7,7 @@ import Navbar from "@/components/home/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import ConditionalBackground from "@/components/ui/ConditionalBackground";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -101,6 +102,7 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
     >
       <body className="bg-black">
+        <ConditionalBackground />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#06b6d4] focus:text-white focus:rounded-lg focus:font-bold"

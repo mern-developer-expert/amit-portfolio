@@ -20,14 +20,14 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="relative pt-10 pb-12 overflow-hidden bg-gradient-to-t from-[#061025]/90 via-[#07162b]/70 to-transparent">
-      <div
+      {/* <div
         className="absolute inset-0 z-1"
         style={{
           background:
             "linear-gradient(to right,rgb(34, 113, 225) 0%, rgba(62, 62, 71, 0) 27%, rgba(0, 0, 0, 0) 100%)",
           opacity: "35%",
         }}
-      />
+      /> */}
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -left-20 top-10 w-80 h-80 bg-gradient-to-tr from-[#06b6d4]/10 to-transparent rounded-full blur-3xl" />

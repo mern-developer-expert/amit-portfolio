@@ -1,9 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import { useReducedMotion } from "framer-motion";
-import { MoveDirection, OutMode } from "@tsparticles/engine";
 
 // Load particles only in the browser and when not running tests (vitest/jsdom)
 const Particles = dynamic(() => import("@tsparticles/react"), { ssr: false });
@@ -13,48 +12,34 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
   const [init, setInit] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const particlesInitCb = useCallback(async () => {
-    try {
-      // Dynamically load engine and slim preset
-      const { tsParticles } = await import("@tsparticles/engine");
-      if (tsParticles) {
-        const { loadSlim } = await import("@tsparticles/slim");
-        await loadSlim(tsParticles);
-      }
-    } catch (err) {
-      // swallow — background is decorative
-      // eslint-disable-next-line no-console
-      // console.error("tsParticles init failed", err);
-    }
-  }, []);
-
   useEffect(() => {
     // Avoid initializing in Vitest environment (import.meta.vitest) to keep tests fast
     // Also skip on server where window is undefined
     const isTest = typeof (import.meta as any).vitest !== "undefined";
     if (typeof window === "undefined" || isTest) return;
 
-    const scheduleInit = () => {
-      if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-        window.requestIdleCallback(async () => {
-          await particlesInitCb();
-          setInit(true);
-        });
-      } else {
-        setTimeout(async () => {
-          await particlesInitCb();
-          setInit(true);
-        }, 1);
-      }
-    };
+    // Eagerly prefetch the heavy modules on mount so the network request starts immediately,
+    // avoiding the waterfall effect after the timeout.
+    const enginePromise = import("@tsparticles/engine");
+    const slimPromise = import("@tsparticles/slim");
 
     const t = setTimeout(() => {
-      // load engine lazily and then mark init
-      import("@tsparticles/engine")
+      enginePromise
         .then(async (engineModule) => {
           const { tsParticles } = engineModule;
           if (tsParticles) {
-            scheduleInit();
+            try {
+              const { loadSlim } = await slimPromise;
+              await loadSlim(tsParticles);
+              
+              if ("requestIdleCallback" in window) {
+                window.requestIdleCallback(() => setInit(true));
+              } else {
+                setTimeout(() => setInit(true), 1);
+              }
+            } catch (err) {
+              // ignore
+            }
           }
         })
         .catch(() => {
@@ -63,7 +48,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
     }, delay);
 
     return () => clearTimeout(t);
-  }, [delay, particlesInitCb]);
+  }, [delay]);
 
   useEffect(() => {
     // Set particle count based on window size only on the client-side to avoid hydration mismatch
@@ -81,8 +66,8 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
       fpsLimit: 60,
       particles: {
         number: {
-          value: isMobile ? 200 : 450,
-          density: { enable: true, area: 1000 },
+          value: isMobile ? 150 : 250,
+          density: { enable: true, area: 500 },
         },
         color: { value: ["#dde2e6", "#fff", "#dde2e6"] },
         shape: { type: ["circle", "square"] },
@@ -90,7 +75,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
           value: { min: 0.2, max: 0.7 },
           animation: {
             enable: false,
-            speed: 1,
+            speed: 0.5,
             sync: false,
             // startValue: "max",
             // startValue: "min",
@@ -138,12 +123,12 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
       },
       particles: {
         number: {
-          value: isMobile ? 280 : 500,
+          value: isMobile ? 180 : 200,
           density: {
             enable: true,
-            area: 1000,
+            area: 500,
           },
-          size: { value: { min: 0.2, max: 1.3 } },
+          size: { value: { min: 0.2, max: 1 } },
         },
         color: {
           value: ["#FFFF00", "#eeb056"], // Keep yellow for foreground
@@ -166,7 +151,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
           value: { min: 0.2, max: 0.9 },
           animation: {
             enable: false,
-            speed: 5,
+            speed: 2,
             sync: false,
             // startValue: "max",
             // startValue: "min",
@@ -179,12 +164,12 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
         },
         move: {
           enable: true,
-          speed: { min: 1, max: 2 },
-          direction: MoveDirection.top,
+          speed: { min: 0.5 , max: 1 },
+          direction: "top" as any,
           random: false,
           straight: true,
           outModes: {
-            default: OutMode.out,
+            default: "out" as any,
           },
         },
         links: {
@@ -204,20 +189,24 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
   const isTest = typeof (import.meta as any).vitest !== "undefined";
 
   return (
-    <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden>
+    <div className="fixed inset-0 z-0 pointer-events-none" aria-hidden>
+      {/* Global Background Glows */}
+      <div className="absolute left-2 sm:-left-20 -top-10 w-20 sm:w-72 h-72 bg-gradient-to-tr from-[#34d399]/30 to-[#06b6d4]/12 rounded-full blur-3xl mix-blend-screen pointer-events-none z-10" aria-hidden />
+      <div className="absolute right-3 sm:-right-14 bottom-8 w-20 sm:w-80 h-80 bg-gradient-to-bl from-[#6ee7b7]/25 to-[#06b6d4]/8 rounded-full blur-3xl mix-blend-screen pointer-events-none z-10" aria-hidden />
+
       {init && !isTest ? (
         <>
           {/* background layer */}
           <Particles
             id="tsparticles-background"
             options={backgroundParticles}
-            className="absolute inset-0 z-0"
+            className="fixed inset-0 z-0"
           />
           {/* foreground */}
           <Particles
             id="tsparticles-foreground"
             options={foregroundParticles}
-            className="absolute inset-0 z-0"
+            className="fixed inset-0 z-0"
           />
 
           <div
@@ -231,7 +220,7 @@ export default function HeroBackground({ delay = 500 }: { delay?: number }) {
         </>
       ) : (
         // static decorative overlay variant
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07162b]/90 via-[#061025]/60 to-[#071826]/90 z-0" />
+        <div className="fixed inset-0 bg-gradient-to-r from-[#07162b]/90 via-[#061025]/60 to-[#071826]/90 z-0" />
       )}
     </div>
   );

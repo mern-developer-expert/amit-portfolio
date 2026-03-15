@@ -11,7 +11,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useRef, useState } from "react";
-import HeroBackground from "../ui/HeroBackground";
+
 import { fadeInUp, staggerContainer } from "@/constant";
 import { handleDownloadResume } from "@/utility";
 import toast from "react-hot-toast";
@@ -133,11 +133,9 @@ export default function ContactUs() {
 
   return (
     <LazyMotion features={domAnimation}>
-      <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-[#07162b]/80 via-[#061025]/70 to-[#071826]/95">
+      <div className="min-h-screen relative overflow-hidden">
         {/* Decorative gradient layers */}
-        <HeroBackground delay={500} />
-        <div className="absolute left-2 sm:-left-20 -top-10 w-20 sm:w-72 h-72 bg-gradient-to-tr from-[#34d399]/30 to-[#06b6d4]/12 rounded-full blur-3xl mix-blend-screen pointer-events-none z-10" aria-hidden />
-        <div className="absolute right-3 sm:-right-14 bottom-8 w-20 sm:w-80 h-80 bg-gradient-to-bl from-[#6ee7b7]/25 to-[#06b6d4]/8 rounded-full blur-3xl mix-blend-screen pointer-events-none z-10" aria-hidden />
+
 
         <div className="pt-32 pb-10 sm:pb-16 px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">

@@ -3,13 +3,11 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Home, Frown } from "lucide-react";
-import HeroBackground from "@/components/ui/HeroBackground";
 import PrimaryButtons from "@/components/buttons/primaryButtons";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen relative flex items-center justify-center text-center px-4 bg-gradient-to-br from-[#07162b]/80 via-[#061025]/70 to-[#071826]/95">
-      <HeroBackground />
 
       <motion.div
         initial={{ opacity: 0, y: -20 }}

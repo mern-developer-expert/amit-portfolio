@@ -7,7 +7,6 @@ import { Sparkles, Calendar, Clock, ArrowRight } from "lucide-react";
 import { BlogCard } from "./BlogCard";
 import { SearchAndFilter } from "./SearchAndFilter";
 import { Pagination } from "./Pagination";
-import HeroBackground from "../ui/HeroBackground";
 import { sanityImageLoader } from "@/lib/image-loader";
 import { urlFor } from "@/lib/sanity";
 import { staggerContainer, fadeInUp } from "@/constant";
@@ -36,8 +35,8 @@ export default function AllBlogsContent({
 
     return (
         <LazyMotion features={domAnimation}>
-            <div className="min-h-screen relative overflow-hidden bg-[#020617] pt-28 sm:pb-10 px-4 sm:px-6 lg:px-8">
-                <HeroBackground delay={500} />
+            <div className="min-h-screen relative overflow-hidden">
+                {/* Decorative gradient layers */}
 
                 {/* Dynamic Background Accents */}
                 <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#06b6d4]/10 rounded-full blur-[120px] pointer-events-none" />
