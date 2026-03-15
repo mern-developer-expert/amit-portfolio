@@ -69,7 +69,7 @@ const Projects = () => {
                       fetchPriority="high"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       style={{
-                        opacity: 0.25,
+                        opacity: 0.45,
                         objectFit: "cover",
                         filter: "saturate(0.9) contrast(0.75) brightness(0.7)",
                       }}
@@ -360,7 +360,7 @@ const Projects = () => {
                           ))}
                         </div>
 
-                        <div className="flex gap-2">
+                        <div className="flex items-center gap-2">
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
