@@ -77,14 +77,14 @@ export default function Hero() {
 
               {/* Right column – hero image */}
               <div className="lg:col-span-5 flex justify-center lg:justify-end px-4 sm:px-6 md:px-0">
-                <div className="relative w-[300px] sm:w-[360px] md:w-[420px] lg:w-[520px] rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 sm:backdrop-blur-md">
-                  <div className="relative z-10 flex items-center justify-center p-6 bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
+                <div className="relative w-[360px] md:w-[450px] lg:w-[550px] rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 sm:backdrop-blur-md">
+                  <div className="relative z-10 flex items-center justify-center rounded-xl overflow-hidded aspect-[1024/682] bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
                     <Image
-                      src="/hero-illustration.svg"
+                      src="/amitdevjourney.png"
                       alt="Amit Kumar - MERN Developer Expert and Product Engineer"
-                      width={900}
-                      height={600}
-                      className="w-full h-auto"
+                      width={1024}
+                      height={682}
+                      className="w-full h-auto overflow-hidden rounded-xl"
                       style={{ height: "auto" }}
                       priority
                       fetchPriority="high"
