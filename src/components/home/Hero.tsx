@@ -80,7 +80,7 @@ export default function Hero() {
                 <div className="relative w-[360px] md:w-[450px] lg:w-[550px] rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 sm:backdrop-blur-md">
                   <div className="relative z-10 flex items-center justify-center rounded-xl overflow-hidded aspect-[1024/682] bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
                     <Image
-                      src="/amitdevjourney.png"
+                      src="/amitdevjourney1.png"
                       alt="Amit Kumar - MERN Developer Expert and Product Engineer"
                       width={1024}
                       height={682}
