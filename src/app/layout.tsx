@@ -1,13 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
+// @ts-ignore
 import "./globals.css";
 import Navbar from "@/components/home/navbar";
 import Footer from "@/components/footer";
-import { Toaster } from "react-hot-toast";
-import ScrollToTop from "@/components/ui/ScrollToTop";
 import ConditionalBackground from "@/components/ui/ConditionalBackground";
+import ClientEnhancements from "@/components/layout/ClientEnhancements";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -113,29 +111,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main id="main-content">{children}</main>
-        <Toaster
-          position="top-right"
-          toastOptions={{
-            style: {
-              background: "#1e293b",
-              color: "#f1f5f9",
-              border: "1px solid #334155",
-            },
-            success: {
-              style: {
-                borderColor: "#10b981",
-              },
-            },
-            error: {
-              style: {
-                borderColor: "#ef4444",
-              },
-            },
-          }}
-        />
-        <SpeedInsights debug={process.env.NODE_ENV === "development"} />
-        <Analytics />
-        <ScrollToTop />
+        <ClientEnhancements />
         <Footer />
       </body>
     </html>

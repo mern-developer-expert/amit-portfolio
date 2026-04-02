@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useMemo, useEffect, useCallback } from "react";
@@ -83,22 +83,22 @@ export default function Navbar() {
   };
 
   return (
+    <LazyMotion features={domAnimation} strict>
     <nav
       className={`w-full max-w-7xl fixed top-3   bg-[#07162b]/50 backdrop-blur-lg z-20 border-[0.5px] sm:border border-[#06b6d4] sm:border-white/15 rounded-xl sm:rounded-3xl shadow-[#06b6d4] sm:shadow-black/20 ${isMenuOpen ? "shadow-sm" : ""}`}
     >
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
           <Link href="/">
-            <motion.div whileHover={{ scale: 1.05 }}>
+            <m.div whileHover={{ scale: 1.05 }}>
               <Image
                 src={amitImage}
                 width={64}
                 height={64}
                 alt="amit image"
                 className="rounded-full border-2 border-white/80 shadow-md shadow-white/50"
-                priority
               />
-            </motion.div>
+            </m.div>
           </Link>
 
           {/* Desktop Links */}
@@ -166,7 +166,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <motion.div
+        <m.div
           variants={navVariants}
           initial="closed"
           animate={isMenuOpen ? "open" : "closed"}
@@ -228,9 +228,10 @@ export default function Navbar() {
               Resume
             </Button>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </nav>
+    </LazyMotion>
   );
 }
 

@@ -78,12 +78,13 @@ export default function Hero() {
               {/* Right column – hero image */}
               <div className="lg:col-span-5 flex justify-center lg:justify-end px-4 sm:px-6 md:px-0">
                 <div className="relative w-[360px] md:w-[450px] lg:w-[550px] rounded-2xl overflow-hidden shadow-2xl border border-white/5 bg-gradient-to-br from-[#07162b]/70 via-[#07162b]/40 to-[#0b1f2b]/30 p-6 sm:backdrop-blur-md">
-                  <div className="relative z-10 flex items-center justify-center rounded-xl overflow-hidded aspect-[1024/682] bg-gradient-to-br from-white/5 to-transparent rounded-2xl">
+                  <div className="relative z-10 flex items-center justify-center rounded-xl overflow-hidded aspect-[1024/682] bg-gradient-to-br from-white/5 to-transparent">
                     <Image
                       src="/amitdevjourney1.png"
                       alt="Amit Kumar - MERN Developer Expert and Product Engineer"
                       width={1024}
                       height={682}
+                      sizes="(max-width: 640px) calc(100vw - 5rem), (max-width: 1024px) 450px, 550px"
                       className="w-full h-auto overflow-hidden rounded-xl"
                       style={{ height: "auto" }}
                       priority

@@ -65,8 +65,6 @@ const Projects = () => {
                       src="/Bright DiGi Gold.jpg"
                       className="p-1 rounded-xl"
                       fill
-                      priority
-                      fetchPriority="high"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       style={{
                         opacity: 0.45,
