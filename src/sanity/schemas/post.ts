@@ -70,6 +70,18 @@ export default defineType({
           marks: {
             annotations: [
               {
+                name: "link",
+                type: "object",
+                title: "URL",
+                fields: [
+                  {
+                    title: "URL",
+                    name: "href",
+                    type: "url",
+                  },
+                ],
+              },
+              {
                 name: "color",
                 title: "Color",
                 type: "object",

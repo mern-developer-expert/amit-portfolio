@@ -96,6 +96,7 @@ export default function Navbar() {
                 width={64}
                 height={64}
                 alt="amit image"
+                loading="eager"
                 className="rounded-full border-2 border-white/80 shadow-md shadow-white/50"
               />
             </m.div>
