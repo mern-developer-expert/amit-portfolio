@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Amit Kumar" }],
   alternates: {  // ADD THIS – critical for correct canonical URL
-    canonical: "https://www.amitdevjourney.xyz/contact",
+    canonical: "https://www.amitdevjourney.com/contact",
   },
   robots: {
     index: true,
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     title: "Contact Amit Kumar | Let's Build Together",
     description:
       "Get in touch with Amit Kumar to discuss your next project. Available for freelance opportunities in web development, API design, and cloud infrastructure.",
-    url: "https://www.amitdevjourney.xyz/contact",
+    url: "https://www.amitdevjourney.com/contact",
     siteName: "Amit Kumar Portfolio",
     images: [
       {
-        url: "https://www.amitdevjourney.xyz/og-image.jpg",
+        url: "https://www.amitdevjourney.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Contact Amit Kumar",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Contact Amit Kumar | Let's Build Together",
     description:
       "Get in touch with Amit Kumar to discuss your next project. Available for freelance opportunities in web development, API design, and cloud infrastructure.",
-    images: ["https://www.amitdevjourney.xyz/og-image.jpg"],
+    images: ["https://www.amitdevjourney.com/og-image.jpg"],
   },
 };
 

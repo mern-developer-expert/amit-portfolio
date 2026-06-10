@@ -5,7 +5,7 @@ import {
   generateBreadcrumbSchema,
 } from "@/lib/metadata/json-ld";
 
-const BASE_URL = "https://www.amitdevjourney.xyz";
+const BASE_URL = "https://www.amitdevjourney.com";
 const OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 export const metadata: Metadata = {

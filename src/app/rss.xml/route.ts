@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { client } from "@/lib/sanity";
 import { groq } from "next-sanity";
 
-const BASE_URL = "https://www.amitdevjourney.xyz";
+const BASE_URL = "https://www.amitdevjourney.com";
 const FEED_TITLE = "The Journal | Amit Kumar Portfolio";
 const FEED_DESCRIPTION = "Deep-dives into MERN stack development, high-performance web engineering, and digital innovation.";
 

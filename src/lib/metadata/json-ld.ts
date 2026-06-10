@@ -3,7 +3,7 @@
  * This file contains helper functions to generate structured data for different pages.
  */
 
-const BASE_URL = "https://www.amitdevjourney.xyz";
+const BASE_URL = "https://www.amitdevjourney.com";
 const PERSON_ID = `${BASE_URL}/#person`;
 const WEBSITE_ID = `${BASE_URL}/#website`;
 

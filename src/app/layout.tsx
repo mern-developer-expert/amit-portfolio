@@ -15,7 +15,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.amitdevjourney.xyz/"),
+  metadataBase: new URL("https://www.amitdevjourney.com/"),
   title: {
     default: "Amit Kumar | MERN Developer Expert & Full-Stack Engineer",
     template: "%s | Amit Kumar Portfolio",
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     title: "Amit Kumar | MERN Stack Developer Portfolio",
     description:
       "Amit Kumar — Full stack MERN developer. Built production SaaS, real-time platforms and consumer products (1M+ users). Explore case studies, architecture, and product-first engineering.",
-    url: "https://www.amitdevjourney.xyz/",
+    url: "https://www.amitdevjourney.com/",
     siteName: "Amit Kumar Portfolio",
     images: [
       {
-        url: "https://www.amitdevjourney.xyz/og-image.jpg",
+        url: "https://www.amitdevjourney.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Amit Kumar Portfolio",
@@ -71,10 +71,10 @@ export const metadata: Metadata = {
     title: "Amit Kumar | MERN Stack Developer Portfolio",
     description:
       "Amit Kumar, MERN stack developer, specializes in JavaScript and its frameworks, building scalable web apps with React, Node.js, and MongoDB. Explore my portfolio!",
-    images: ["https://www.amitdevjourney.xyz/og-image.jpg"],
+    images: ["https://www.amitdevjourney.com/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://www.amitdevjourney.xyz/",
+    canonical: "https://www.amitdevjourney.com/",
   },
 };
 

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "Amit Kumar" }],
     alternates: {
-        canonical: "https://www.amitdevjourney.xyz/blogs",
+        canonical: "https://www.amitdevjourney.com/blogs",
     },
     robots: {
         index: true,
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
         title: "The Journal | Amit Kumar Portfolio",
         description:
             "Deep-dives into MERN stack development, high-performance web engineering, and digital innovation. Explore technical insights and master your craft with Amit Kumar.",
-        url: "https://www.amitdevjourney.xyz/blogs",
+        url: "https://www.amitdevjourney.com/blogs",
         siteName: "Amit Kumar Portfolio",
         images: [
             {
-                url: "https://www.amitdevjourney.xyz/og-image.jpg",
+                url: "https://www.amitdevjourney.com/og-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: "The Journal - Amit Kumar Portfolio",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         title: "The Journal | Amit Kumar Portfolio",
         description:
             "Exploration of modern web engineering and high-performance MERN architecture by Amit Kumar.",
-        images: ["https://www.amitdevjourney.xyz/og-image.jpg"],
+        images: ["https://www.amitdevjourney.com/og-image.jpg"],
     },
 };
 
@@ -110,8 +110,8 @@ export default async function AllBlogsPage({
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(
                         generateBreadcrumbSchema([
-                            { name: "Home", url: "https://www.amitdevjourney.xyz/" },
-                            { name: "Blogs", url: "https://www.amitdevjourney.xyz/blogs" },
+                            { name: "Home", url: "https://www.amitdevjourney.com/" },
+                            { name: "Blogs", url: "https://www.amitdevjourney.com/blogs" },
                         ])
                     ),
                 }}

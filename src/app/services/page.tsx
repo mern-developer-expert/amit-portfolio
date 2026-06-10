@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Amit Kumar" }],
   alternates: {  // ADD THIS – critical for canonical tag output
-    canonical: "https://www.amitdevjourney.xyz/services",
+    canonical: "https://www.amitdevjourney.com/services",
   },
   robots: {
     index: true,
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     title: "MERN Stack & Digital Marketing Services | Amit Kumar",
     description:
       "Amit Kumar offers expert MERN full-stack development, digital marketing, and cloud DevOps services. From React/Next.js frontends to scalable Node.js backends and strategic SEO.",
-    url: "https://www.amitdevjourney.xyz/services",
+    url: "https://www.amitdevjourney.com/services",
     siteName: "Amit Kumar Portfolio",
     images: [
       {
-        url: "https://www.amitdevjourney.xyz/og-image.jpg",
+        url: "https://www.amitdevjourney.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Amit Kumar Services",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "MERN Stack & Digital Marketing Services | Amit Kumar",
     description:
       "Expert MERN full-stack development, digital marketing, and DevOps services by Amit Kumar.",
-    images: ["https://www.amitdevjourney.xyz/og-image.jpg"],
+    images: ["https://www.amitdevjourney.com/og-image.jpg"],
   },
 };
 

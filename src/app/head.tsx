@@ -5,7 +5,7 @@ export default function Head() {
             "@type": "Person",
             name: "Amit Kumar",
             jobTitle: "Full‑Stack MERN Developer",
-            url: "https://www.amitdevjourney.xyz/",
+            url: "https://www.amitdevjourney.com/",
             sameAs: [
                 "https://github.com/mern-developer-expert",
                 "https://www.linkedin.com/in/mern-developer-expert-amit",
@@ -48,12 +48,12 @@ export default function Head() {
     return (
         <>
             {/* canonical + basic fallbacks stay in metadata in layout.tsx */}
-            <link rel="canonical" href="https://www.amitdevjourney.xyz/" />
+            <link rel="canonical" href="https://www.amitdevjourney.com/" />
             <link
                 rel="alternate"
                 type="application/rss+xml"
                 title="The Journal | Amit Kumar Portfolio"
-                href="https://www.amitdevjourney.xyz/rss.xml"
+                href="https://www.amitdevjourney.com/rss.xml"
             />
             <script
                 key="person-jsonld"

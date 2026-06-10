@@ -9,7 +9,7 @@ interface BlogSubscriptionEmailProps {
 
 export const BlogSubscriptionEmail: React.FC<BlogSubscriptionEmailProps> = ({
     subscriberEmail,
-    siteUrl = "https://www.amitdevjourney.xyz",
+    siteUrl = "https://www.amitdevjourney.com",
 }) => {
     return (
         <div

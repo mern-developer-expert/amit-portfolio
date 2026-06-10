@@ -8,7 +8,7 @@ import { faqItems } from "@/constant";
 import SecondaryButton from "@/components/buttons/secondaryButton";
 import FaqAccordion from "@/components/best-portfolio/FaqAccordion";
 
-const BASE_URL = "https://www.amitdevjourney.xyz";
+const BASE_URL = "https://www.amitdevjourney.com";
 
 export const metadata: Metadata = {
   title: "Best Portfolio Example | Amit Kumar",

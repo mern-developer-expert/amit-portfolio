@@ -167,14 +167,14 @@ export const ContactEmailTemplate: React.FC<Readonly<ContactEmailProps>> = ({
                 >
                     Sent via your portfolio —{" "}
                     <a
-                        href="https://www.amitdevjourney.xyz"
+                        href="https://www.amitdevjourney.com"
                         style={{
                             color: "#28282B",
                             fontSize: "16px",
                             textDecoration: "none",
                         }}
                     >
-                        amitdevjourney.xyz
+                        amitdevjourney.com
                     </a>
                     <br />
                     <small>© {new Date().getFullYear()} Amit Kumar</small>

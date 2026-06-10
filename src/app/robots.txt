@@ -5,5 +5,5 @@ Allow: /
 Disallow: /_next/static/
 Disallow: /_next/data/
 
-Sitemap: https://www.amitdevjourney.xyz/sitemap.xml
-Sitemap: https://www.amitdevjourney.xyz/rss.xml
+Sitemap: https://www.amitdevjourney.com/sitemap.xml
+Sitemap: https://www.amitdevjourney.com/rss.xml

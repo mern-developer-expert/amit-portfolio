@@ -39,7 +39,7 @@ export async function generateMetadata(
       .fit("crop")
       .format("jpg")
       .url()
-    : "https://www.amitdevjourney.xyz/og-image.jpg";
+    : "https://www.amitdevjourney.com/og-image.jpg";
 
   const categories = Array.isArray(post.categories)
     ? post.categories
@@ -62,7 +62,7 @@ export async function generateMetadata(
       "Blog",
     ],
     alternates: {
-      canonical: `https://www.amitdevjourney.xyz/blogs/${slug}`,
+      canonical: `https://www.amitdevjourney.com/blogs/${slug}`,
     },
     authors: [{ name: "Amit Kumar" }],
     publisher: "Amit Kumar",
@@ -77,7 +77,7 @@ export async function generateMetadata(
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.amitdevjourney.xyz/blogs/${slug}`,
+      url: `https://www.amitdevjourney.com/blogs/${slug}`,
       siteName: "Amit Kumar Portfolio",
       images: [
         {
@@ -119,7 +119,7 @@ export default async function BlogPostPage({
     notFound();
   }
 
-  const currentUrl = `https://www.amitdevjourney.xyz/blogs/${slug}`;
+  const currentUrl = `https://www.amitdevjourney.com/blogs/${slug}`;
   const ogImage = post.mainImage
     ? urlFor(post.mainImage)
       .width(1200)
@@ -127,7 +127,7 @@ export default async function BlogPostPage({
       .fit("crop")
       .format("jpg")
       .url()
-    : "https://www.amitdevjourney.xyz/og-image.jpg";
+    : "https://www.amitdevjourney.com/og-image.jpg";
 
   return (
     <>
@@ -150,8 +150,8 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             generateBreadcrumbSchema([
-              { name: "Home", url: "https://www.amitdevjourney.xyz/" },
-              { name: "Blogs", url: "https://www.amitdevjourney.xyz/blogs" },
+              { name: "Home", url: "https://www.amitdevjourney.com/" },
+              { name: "Blogs", url: "https://www.amitdevjourney.com/blogs" },
               { name: post.title, url: currentUrl },
             ]),
           ),

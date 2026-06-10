@@ -12,7 +12,7 @@ Address: Laxmi Nagar, New Delhi - 110092
 Github: https://github.com/mern-developer-expert
 Linkedin: https://www.linkedin.com/in/mern-developer-expert-amit
 X: https://x.com/Amitsin40190332
-Portfolio: https://www.amitdevjourney.xyz/
+Portfolio: https://www.amitdevjourney.com/
 
 SUMMARY:
 Full Stack Engineer (MERN + Next.js) | 3.5+ years
