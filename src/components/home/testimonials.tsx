@@ -14,16 +14,16 @@ const testimonials = [
   },
   {
     quote:
-      "Working with Amit on the Medical Kundali project was a fantastic experience. He has a rare ability to grasp complex product requirements and translate them into a robust, scalable frontend and backend as well. A true product engineer.",
-    name: "Vinod Vishwakarma",
-    title: "Product Manager, HealthTech(Medical Kundali)",
+      "Amit has a strong ability to turn complex product requirements into scalable, reliable frontend and backend systems. He brings clear product thinking and disciplined engineering to every delivery.",
+    name: "Product Stakeholder",
+    title: "Commerce Platform",
     avatar: "/avatars/john-smith.png",
   },
   {
     quote:
-      "Amit's expertise in React and performance optimization was instrumental in rebuilding our product architecture. He delivered a more scalable and stable platform, which was a game-changer for our user engagement.",
-    name: "Ritesh Singh",
-    title: "CTO, TestOfire",
+      "Amit's expertise in React and performance optimization helped create a more scalable and stable product architecture, improving the experience for both users and internal teams.",
+    name: "Technical Collaborator",
+    title: "Platform Engineering",
     avatar: "/avatars/jane-doe.png",
   },
 ];

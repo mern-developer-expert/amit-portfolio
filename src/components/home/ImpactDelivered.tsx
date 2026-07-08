@@ -39,17 +39,17 @@ const ImpactDelivered = () => {
                             color: "from-[#06b6d4] to-[#3ed6ac]"
                         },
                         {
-                            title: "Secure Healthcare SaaS",
-                            subtitle: "OpenAI-Powered Matching",
+                            title: "Commerce Platform",
+                            subtitle: "Aviras Product Experience",
                             icon: <ShieldCheck className="w-8 h-8" />,
-                            desc: "Built HIPAA-aware medical systems integrating an advanced AI compatibility engine to generate individual medical reports based on blood samples and questionnaires.",
+                            desc: "Built responsive catalog, cart, checkout, and account flows with secure API integrations, reliable state handling, and mobile-first UX.",
                             color: "from-[#3ed6ac] to-[#8ef3c1]"
                         },
                         {
-                            title: "Real-time EdTech App",
-                            subtitle: "Interactive Coaching Hub",
+                            title: "Performance Engineering",
+                            subtitle: "Fast, Reliable Interfaces",
                             icon: <Zap className="w-8 h-8" />,
-                            desc: "Orchestrated robust websockets and synchronous data exchange infrastructure for a lag-free digital classroom experience.",
+                            desc: "Improved page speed, accessibility, and interaction quality across production product surfaces used in repeated customer workflows.",
                             color: "from-[#8ef3c1] to-[#06b6d4]"
                         },
                     ].map((impact, index) => (

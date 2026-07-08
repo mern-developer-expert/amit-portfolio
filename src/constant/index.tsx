@@ -16,7 +16,7 @@ Portfolio: https://www.amitdevjourney.com/
 
 SUMMARY:
 Full Stack Engineer (MERN + Next.js) | 3.5+ years
-Built & shipped production platforms for Bright Digi Gold (1M+ users, fintech), TestOfire (EdTech), and Medical Kundali — a live healthcare compatibility (SaaS) platform using Next.js, TypeScript, microservices, AWS S3, RabbitMQ, Redis (caching), and end-to-end encrypted communication. Skilled in architecting high-performance applications, leading cross-functional teams, and shipping features that increase engagement and revenue.
+Built & shipped production platforms for Bright Digi Gold (1M+ users, fintech) and Aviras — a modern commerce platform using Next.js, TypeScript, scalable APIs, secure data handling, and performance-focused frontend architecture. Skilled in architecting high-performance applications, leading cross-functional teams, and shipping features that increase engagement and revenue.
 
 TECHNICAL SKILLS:
 Frontend: JavaScript, React.js, React Native, Next.js, Redux, TypeScript, Tailwind CSS, HTML, CSS, Integration of Complex APIs
@@ -35,19 +35,11 @@ April 2022 – Present
 • Designed and implemented coupon discount systems and promotional features (welcome promos, gifting scenarios), driving a 20% revenue surge as measured by sales and profit margins.
 • Led end-to-end development of new product features—from UI/UX implementation to backend integration—resulting in smoother user journeys across onboarding, transactions, and savings experiences.
 
-Freelance Software Developer (Full Stack Developer) | TestOfire Technologies
-November 2021 – Present | Remote
-• Led the development of a student-coaching app platform using MERN stack, integrating advanced APIs for real-time synchronization of user actions between student and coaching apps.
-• Ensured seamless communication by implementing instant updates, improving collaboration efficiency and user satisfaction across both applications.
-
-Full Stack Developer | Medical Kundali
-January 2025 – Present | Remote
-• Developed a secure healthcare compatibility platform with report-sharing using MERN stack, enabling OTP-based authentication and microservices architecture.
-• Built independent microservices communicating via encrypted payloads and RabbitMQ for asynchronous report processing and notifications.
-• Designed user authentication, report upload, and sharing workflows integrated with MongoDB for efficient data management.
-• Engineered file upload & secure sharing module using presigned S3 URLs and AWS S3 for serving medical documents with cache invalidation.
-• Built responsive admin and user dashboards using Next.js App Router, Tailwind CSS, Shadcn/ui, and server actions — achieving 100% Lighthouse accessibility score.
-• Collaborated with business stakeholders to define requirements and deliver a scalable solution that improved user engagement and streamlined report-sharing processes.
+Full Stack Developer | Aviras
+January 2025 – Present
+• Built a modern commerce experience with Next.js, TypeScript, and reusable UI architecture for fast product discovery and smooth checkout flows.
+• Integrated catalog, cart, authentication, and customer-facing workflows with scalable API patterns and reliable client state management.
+• Improved mobile responsiveness, page performance, and accessibility across product listing, detail, policy, and account surfaces.
 
 EDUCATION:
 Master of Computer Applications (MCA) | Maharaja Agrasen Himalayan Garhwal University (MAHGU)
@@ -63,11 +55,8 @@ Investing & Saving Platform | Bright Digi Gold (April 2022 – Present)
 • Developed a full-fledged e-commerce platform for buying, selling, ordering, and gifting digital gold/silver using MERN stack; integrated payment gateways.
 • Reduced transaction processing time by 25% through backend optimizations with Node.js and Express.js.
 
-Medical Matrimony Platform | Medical Kundali (Jan 2025 – Present)
-• Designed and delivered a secure healthcare compatibility platform from scratch using modern architecture (microservices, RabbitMQ, encrypted comms, Redis).
-
-Student-Coaching App | TestOfire Technologies (November 2021 – October 2024)
-• Built a real-time app ecosystem using MERN stack, facilitating seamless interaction between students and coaches.
+Aviras Commerce Platform | Aviras (Jan 2025 – Present)
+• Delivered responsive catalog, cart, checkout, and account experiences with Next.js, TypeScript, Tailwind CSS, and API-driven state management.
 
 CERTIFICATIONS:
 • JavaScript + ES6 with MERN | Udemy | 2022
@@ -137,13 +126,6 @@ export const teamMembers: TeamMember[] = [
     expertise: "Masters scalable REST APIs with Node.js, Express, and MongoDB, delivering high-performance systems through advanced caching and resilient error handling.",
     link: "https://www.linkedin.com/in/ayush-arya-36505a218/",
     avatar: "/team/Ayush.jpeg"
-  },
-  {
-    name: "Ritesh Singh",
-    role: "Full Stack Developer & Technical Lead",
-    expertise: "10+ years of expertise in MERN, TypeScript, Next.js, AWS/CI-CD pipeline management and leading AI platform development. Delivered SaaS based Platform.",
-    link: "https://www.linkedin.com/in/1124ritesh/",
-    avatar: "/team/Ritesh.jpeg"
   },
   {
     name: "Shashi Bhushan Jha",

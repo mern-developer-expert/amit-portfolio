@@ -72,7 +72,7 @@ export default function AboutUs() {
                     <ProfileCard
                       name="Amit Kumar"
                       title="MERN Full‑Stack Developer · Product Engineer"
-                      description="I love turning product ideas into reliable, scalable experiences. Recent work includes Bright Digi Gold (1M+ users), TestOfire (real-time platform), and Medical Kundali (healthcare SaaS)."
+                      description="I love turning product ideas into reliable, scalable experiences. Recent work includes Bright Digi Gold (1M+ users) and Aviras, with a focus on production-grade commerce, performance, and scalable UX."
                       email="notgetin18@gmail.com"
                     />
                   </m.div>
@@ -143,26 +143,15 @@ export default function AboutUs() {
                       accent: "#D79D47",
                     },
                     {
-                      title: "Product Engineer / Freelance",
-                      company: "Medical Kundali — Healthcare SaaS",
+                      title: "Full Stack Developer",
+                      company: "Aviras — Commerce Platform",
                       dateRange: "Jan 2024 - Present",
                       bullets: [
-                        "Developing a comprehensive medical platform delivering personalized health insights and care workflows",
-                        "Built with MERN stack, focusing on UX, data security and HIPAA-aware safeguards for clinical data",
-                        "Improved performance and data sync for patient records and analytics; designed scalable APIs and observability",
+                        "Built responsive product discovery, cart, checkout, and account flows using Next.js, TypeScript, and reusable UI patterns",
+                        "Integrated catalog and customer workflows with reliable client state management and API-driven architecture",
+                        "Improved mobile usability, page performance, and accessibility across high-traffic commerce surfaces",
                       ],
                       accent: "#8E0801",
-                    },
-                    {
-                      title: "Software Engineer (SE)",
-                      company: "TestOfire Technologies",
-                      dateRange: "November 2021 - November 2024",
-                      bullets: [
-                        "Orchestrated creation of pioneering student and coaching app platform with real-time synchronization",
-                        "Architected resilient API-based infrastructure facilitating dynamic data exchange between applications",
-                        "Enhanced communication efficiency through seamless user experience and instant updates",
-                      ],
-                      accent: "#8b5cf6",
                     },
                   ].map((item, index) => (
                     <m.div

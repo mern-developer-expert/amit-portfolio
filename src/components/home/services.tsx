@@ -276,7 +276,7 @@ const Services = () => {
                   </li>
                 </ol>
                 <div className="mt-4 text-xs text-slate-400">
-                  Sample projects: Bright Digi Gold, TestOfire, Medical Kundali
+                  Sample projects: Bright Digi Gold, Aviras
                 </div>
               </Card>
             </m.div>

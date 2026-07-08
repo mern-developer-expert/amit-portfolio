@@ -19,24 +19,21 @@ describe('AboutUs component', () => {
         render(<AboutUs />)
 
         // Stats — use getAllByText because values may appear in hidden labels elsewhere
-        const users = screen.getAllByText(/50,000\+/i)
+        const users = screen.getAllByText(/100k\+/i)
         expect(users.length).toBeGreaterThan(0)
         expect(screen.getAllByText(/30%/i).length).toBeGreaterThan(0)
 
         // Timeline entries
         expect(screen.getByText(/bright digital gold/i)).toBeInTheDocument()
-        expect(screen.getByText(/testofire technologies/i)).toBeInTheDocument()
-        // Medical Kundali entry — may appear in multiple places so assert at least one match
-        expect(screen.getAllByText(/medical kundali/i).length).toBeGreaterThan(0)
+        expect(screen.getAllByText(/aviras/i).length).toBeGreaterThan(0)
         // Timeline bullets
-        expect(screen.getByText(/Developed responsive web and mobile interfaces serving 50,000\+/i)).toBeInTheDocument()
-        // Medical Kundali bullets
-        expect(screen.getByText(/personalized health insights/i)).toBeInTheDocument()
+        expect(screen.getByText(/Developed responsive web and mobile interfaces serving 100,000\+/i)).toBeInTheDocument()
+        expect(screen.getByText(/product discovery, cart, checkout/i)).toBeInTheDocument()
         // Services present (sample checks)
         expect(screen.getAllByText(/SEO & Growth Optimization|Mobile & App Development/i).length).toBeGreaterThan(0)
         // API detail checks
-        expect(screen.getByText(/Payment gateway/i)).toBeInTheDocument()
-        expect(screen.getByText(/Event-driven architectures/i)).toBeInTheDocument()
+        expect(screen.getByText(/payments integrations/i)).toBeInTheDocument()
+        expect(screen.getByText(/event-driven backends/i)).toBeInTheDocument()
     })
 
     test('is keyboard accessible — profile and stat tiles focusable', async () => {

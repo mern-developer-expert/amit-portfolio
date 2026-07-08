@@ -63,13 +63,13 @@ export default function Hero() {
                   <div className="inline-flex items-center gap-3">
                     <strong className="text-white text-lg">SaaS</strong>
                     <div className="text-sm">
-                      Medical Kundali — healthcare platform
+                      Aviras — commerce platform
                     </div>
                   </div>
                   <div className="inline-flex items-center gap-3">
-                    <strong className="text-white text-lg">Real-time</strong>
+                    <strong className="text-white text-lg">Scale</strong>
                     <div className="text-sm">
-                      TestOfire — realtime education platform
+                      Secure, API-driven product experiences
                     </div>
                   </div>
                 </div>
@@ -127,10 +127,7 @@ export default function Hero() {
                 ⭐ Bright Digi Gold — 1M+ users
               </span>
               <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 text-sm text-slate-200">
-                🏥 Medical Kundali — healthcare SaaS
-              </span>
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 text-sm text-slate-200">
-                🎓 TestOfire — real-time EdTech
+                Aviras — commerce platform
               </span>
             </div>
 

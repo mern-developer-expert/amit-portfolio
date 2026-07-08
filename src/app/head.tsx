@@ -30,7 +30,7 @@ export default function Head() {
             "@type": "CreativeWork",
             name: "Amit Kumar — Resume",
             description: "Official resume / CV for Amit Kumar — Full‑Stack MERN Developer.",
-            url: "https://docs.google.com/document/d/1WQormpR0rl5oz-JgnFhqoH9MPsg3zvAwqA29mZzNNzw/export?format=pdf",
+            url: "https://docs.google.com/document/d/1hQcoSBzEqEhM97nAy6b6_lRGButLUZ7KaXv-SP_JN4c/export?format=pdf",
             encodingFormat: "application/pdf"
         },
         {
@@ -38,9 +38,8 @@ export default function Head() {
             "@type": "ItemList",
             name: "Notable projects",
             itemListElement: [
-                { "@type": "ListItem", position: 1, url: "https://medicalkundali.com/", name: "Medical Kundali — healthcare SaaS" },
-                { "@type": "ListItem", position: 2, url: "https://brightdigigold.com/", name: "Bright Digi Gold — consumer product (1M+ users)" },
-                { "@type": "ListItem", position: 3, url: "https://testofire.in/", name: "TestOfire — real-time EdTech" }
+                { "@type": "ListItem", position: 1, url: "https://brightdigigold.com/", name: "Bright Digi Gold — consumer product (1M+ users)" },
+                { "@type": "ListItem", position: 2, name: "Aviras — commerce platform" }
             ]
         }
     ];

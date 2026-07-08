@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Amit Kumar | MERN Full-Stack Developer",
   description:
-    "Learn about Amit Kumar, a product-focused MERN stack developer with 4+ years of experience building scalable web applications for companies like Bright Digi Gold and TestOfire.",
+    "Learn about Amit Kumar, a product-focused MERN stack developer with 4+ years of experience building scalable web applications for companies like Bright Digi Gold and Aviras.",
   keywords: [
     "Amit Kumar",
     "MERN Developer Expert",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Next.js",
     "best-portfolio",
     "Portfolio",
-    "Freelance developer India",
+    "Product engineer India",
     "Web development experience",
   ],
   authors: [{ name: "Amit Kumar" }],
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     creator: "@Amitsin40190332",
     title: "About Amit Kumar | MERN Full-Stack Developer",
     description:
-      "Product-focused MERN stack developer with 4+ years experience building scalable apps for Bright Digi Gold, TestOfire, and more.",
+      "Product-focused MERN stack developer with 4+ years experience building scalable apps for Bright Digi Gold, Aviras, and more.",
     images: ["https://www.amitdevjourney.com/og-image.jpg"],
   },
 };

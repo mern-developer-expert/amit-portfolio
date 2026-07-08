@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Cloud DevOps",
     "AWS",
     "React Native",
-    "Freelance Developer",
+    "Product Engineer",
     "Amit Kumar",
   ],
   authors: [{ name: "Amit Kumar" }],
